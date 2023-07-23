@@ -1,0 +1,84 @@
+
+/* Стили для формы добавления новой заметки */
+.note-form {
+  margin: auto;
+  width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .note-form label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .note-form input {
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .note-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Стили для каждой заметки в списке */
+  .notes-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .note-card {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .note-card p {
+    flex: 1;
+    font-size: 16px;
+  }
+  
+  
+  
+  /* Cтиль кнопки  */
+.note-card button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Применяем иконку Material Icons к кнопке */
+.note-card button::before {
+  content: 'close';
+  font-family: 'Material Icons'; 
+}
+ 
